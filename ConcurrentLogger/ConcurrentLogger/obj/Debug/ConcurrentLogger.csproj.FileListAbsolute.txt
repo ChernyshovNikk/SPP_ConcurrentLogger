@@ -1,0 +1,1 @@
+E:\СПП. Лабораторные\ThirdLab\ConcurrentLogger\ConcurrentLogger\bin\Debug\ConcurrentLogger.exe.config
