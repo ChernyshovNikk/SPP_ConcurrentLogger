@@ -45,6 +45,7 @@
     <Compile Include="ILoggerTarget.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="LoggerInformation.cs" />
+    <Compile Include="LoggerTarget.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

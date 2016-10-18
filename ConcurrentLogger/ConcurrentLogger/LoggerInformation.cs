@@ -8,9 +8,9 @@ namespace ConcurrentLogger
 {
     public class LoggerInformation
     {
-        public LogLevel loggerLevel;
-        public string loggerMessage;
-        public string loggerDateAndTime;
+        private LogLevel loggerLevel;
+        private string loggerMessage;
+        private string loggerDateAndTime;
 
         public LoggerInformation(LogLevel level, string message)
         {
