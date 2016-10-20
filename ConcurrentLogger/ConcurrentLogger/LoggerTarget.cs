@@ -20,6 +20,7 @@ namespace ConcurrentLogger
         {
             byte[] writeInfo = Encoding.Default.GetBytes(loggerInformation.GetLoggerStringMessage());
             fileStream.Write(writeInfo, 0, writeInfo.Length);
+            fileStream.Flush();
             return true;
         }
 
@@ -27,6 +28,7 @@ namespace ConcurrentLogger
         {
             byte[] writeInfo = Encoding.Default.GetBytes(loggerInformation.GetLoggerStringMessage());
             fileStream.Write(writeInfo, 0, writeInfo.Length);
+            await fileStream.FlushAsync();
             return true;
         }
     }
