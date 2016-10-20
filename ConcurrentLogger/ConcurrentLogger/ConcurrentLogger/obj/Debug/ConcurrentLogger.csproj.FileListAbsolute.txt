@@ -1,0 +1,6 @@
+E:\СПП. Лабораторные\ConcurrentLogger\ConcurrentLogger\ConcurrentLogger\bin\Debug\ConcurrentLogger.exe.config
+E:\СПП. Лабораторные\ConcurrentLogger\ConcurrentLogger\ConcurrentLogger\bin\Debug\ConcurrentLogger.exe
+E:\СПП. Лабораторные\ConcurrentLogger\ConcurrentLogger\ConcurrentLogger\bin\Debug\ConcurrentLogger.pdb
+E:\СПП. Лабораторные\ConcurrentLogger\ConcurrentLogger\ConcurrentLogger\obj\Debug\ConcurrentLogger.csprojResolveAssemblyReference.cache
+E:\СПП. Лабораторные\ConcurrentLogger\ConcurrentLogger\ConcurrentLogger\obj\Debug\ConcurrentLogger.exe
+E:\СПП. Лабораторные\ConcurrentLogger\ConcurrentLogger\ConcurrentLogger\obj\Debug\ConcurrentLogger.pdb
