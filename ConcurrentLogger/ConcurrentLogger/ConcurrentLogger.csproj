@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{92F6F711-287B-46B1-BAA4-5F9D55A0BB54}</ProjectGuid>
+    <ProjectGuid>{CF2E6F74-ED0C-451B-892A-F848460BB48C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ConcurrentLogger</RootNamespace>
@@ -46,6 +46,7 @@
     <Compile Include="Logger.cs" />
     <Compile Include="LoggerInformation.cs" />
     <Compile Include="LoggerTarget.cs" />
+    <Compile Include="LoggerTarget_UDP.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThreadInformation.cs" />

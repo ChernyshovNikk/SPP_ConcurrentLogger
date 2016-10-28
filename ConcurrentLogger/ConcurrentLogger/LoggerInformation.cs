@@ -16,7 +16,7 @@ namespace ConcurrentLogger
         {
             this.loggerLevel = level;
             this.loggerMessage = message;
-            this.loggerDateAndTime = DateTime.Now.ToString();
+            this.loggerDateAndTime = DateTime.Now.ToString() + ":" + DateTime.Now.Millisecond.ToString();
         }
 
         public string GetLoggerStringMessage()

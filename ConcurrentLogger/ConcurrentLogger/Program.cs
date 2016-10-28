@@ -6,15 +6,25 @@ using System.Threading.Tasks;
 
 namespace ConcurrentLogger
 {
-    public class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            int bufferLimit = 4;
-            ILoggerTarget[] loggerTarget = new ILoggerTarget[] {new LoggerTarget("LogerFile.txt")};
-            Logger logger = new Logger(bufferLimit, loggerTarget);
-            for (int i = 0; i < 20; i++)
-                logger.Log(new LoggerInformation(LogLevel.Info, "Task " + i));
+            LoggerTarget loggerFile = new LoggerTarget("E:\\LoggerFile.txt");
+            ILoggerTarget[] loggerTargets = new ILoggerTarget[] { loggerFile };
+            
+            Console.WriteLine("Введите максимальное количество объектов в буфере: ");
+            int bufferLimit = Convert.ToInt32(Console.ReadLine());
+
+            Logger logger = new Logger(bufferLimit, loggerTargets);
+            
+            for (int i = 0; i < 100000; i++)
+                logger.Log(new LoggerInformation(LogLevel.Info, "task" + (i+1) + " start"));
+
+            logger.LoggerFlushControl();
+            loggerFile.CloseFile();
+            Console.WriteLine("-----------------");
+            Console.WriteLine("Работа завершена!");
         }
     }
 }
