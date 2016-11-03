@@ -10,7 +10,7 @@ namespace ConcurrentLogger
     public class LoggerTarget : ILoggerTarget
     {
         private FileStream fileStream;
-
+        
         public LoggerTarget(string fileName)
         {
             fileStream = new FileStream(fileName, FileMode.Append, FileAccess.Write);

@@ -51,7 +51,14 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Logger_Tests.cs" />
+    <Compile Include="Logger_UDP_Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConcurrentLogger\ConcurrentLogger.csproj">
+      <Project>{cf2e6f74-ed0c-451b-892a-f848460bb48c}</Project>
+      <Name>ConcurrentLogger</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

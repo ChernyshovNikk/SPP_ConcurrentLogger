@@ -12,15 +12,19 @@ namespace ConcurrentLogger
         {
             LoggerTarget loggerFile = new LoggerTarget("E:\\LoggerFile.txt");
             ILoggerTarget[] loggerTargets = new ILoggerTarget[] { loggerFile };
-            int bufferLimit = 4;
+            
+            Console.WriteLine("Введите максимальное количество объектов в буфере: ");
+            int bufferLimit = Convert.ToInt32(Console.ReadLine());
 
             Logger logger = new Logger(bufferLimit, loggerTargets);
             
-            for (int i = 0; i < 40; i++)
+            for (int i = 0; i < 100000; i++)
                 logger.Log(new LoggerInformation(LogLevel.Info, "task" + (i+1) + " start"));
 
             logger.LoggerFlushControl();
             loggerFile.CloseFile();
+            Console.WriteLine("-----------------");
+            Console.WriteLine("Работа завершена!");
         }
     }
 }
